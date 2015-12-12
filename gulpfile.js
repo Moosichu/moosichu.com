@@ -8,11 +8,11 @@ gulp.task('default', function() {
 
 gulp.task('styles', function() {
   // Get one .styl file and render 
-  gulp.src('./css/*.styl')
+  gulp.src('./assets/css/*.styl')
     .pipe(stylus({
       'include css': true
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./pubilic/css/'));
 });
 
 gulp.task('build', function() {
