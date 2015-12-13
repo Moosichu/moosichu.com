@@ -13,6 +13,7 @@
     "debug": "~2.2.0",
     "del": "^2.2.0",
     "express": "~4.13.1",
+    "gulp": "^3.9.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.1.1",
     "jade": "~1.11.0",
@@ -21,7 +22,6 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
     "mocha": "^2.3.4"
   }
 }
