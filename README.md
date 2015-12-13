@@ -1,4 +1,5 @@
-# Hack Cambridge Website ![alt tag](https://travis-ci.org/Moosichu/moosichu.com.svg)
+# Hack Cambridge Website
+![alt tag](https://travis-ci.org/Moosichu/moosichu.com.svg)
 
 This is the code to My (Tom Read-Cutting's) personal website, being built in nodejs. At first it's simply going to be a portfolio
 and a place for me to throw some experimental stuff on the web.
