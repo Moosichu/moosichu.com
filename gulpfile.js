@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var stylus = require('gulp-stylus');
+var less = require('gulp-less');
+
 var runSequence = require('run-sequence');
 var del = require('del');
 
@@ -24,6 +26,13 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./public/stylesheets'));
 });
 
+gulp.task('bootstrap', function() {
+  // Compile bootstrapp less css files
+  gulp.src('./node_modules/bootstrap/less/bootstrap.less')
+    .pipe(less())
+    .pipe(gulp.dest('./public/stylesheets'));
+});
+
 // other assets
 gulp.task('assets', function () {
   gulp.src(assetPath)
@@ -31,7 +40,7 @@ gulp.task('assets', function () {
 });
 
 gulp.task('build', function() {
-  var args = ['clean', 'styles', 'assets'];
+  var args = ['clean', 'bootstrap', 'styles', 'assets'];
 
   runSequence.apply(null, args);
 });
