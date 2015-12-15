@@ -1,6 +1,6 @@
 {
   "name": "moosichu.com",
-  "version": "0.0.0",
+  "version": "4.2.3",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
