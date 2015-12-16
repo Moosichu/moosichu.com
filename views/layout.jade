@@ -14,8 +14,16 @@ html( lang="en" )
       //Navbar
       +nav("Moosichu.com", "dropdown_menu")
         +nav_item("https://medium.com/@Moosichu") Blog
-        +nav_item("/about", "active") About
-        //+nav_item("/contact") Contact
+        +nav_item("/about") About
+        //+nav_item("/contact", "active") Contact
+        +nav_item_dropdown()(label="On the Web")
+          +nav_item("https://twitter.com/TomReadCutting") Twitter
+          +nav_item("https://github.com/Moosichu") Github
+          +nav_item("https://www.linkedin.com/in/moosichu") LinkedIn
+          //+nav_divider
+          //+nav_header Nav header
+          //+nav_item("#") Separated link
+          //+nav_item("#") One more separated link
       //End Navbar
       block content
     script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
