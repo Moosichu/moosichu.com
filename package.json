@@ -1,8 +1,22 @@
 {
   "name": "moosichu.com",
   "version": "0.0.1",
-  "private": true,
-  "engine": "node 4.2.3",
+  "private": false,
+  "license" : "(GPL-3.0)",
+  "engines": {
+    "node": "4.2.3"
+  },
+  "author": {
+    "name": "Tom Read-Cutting",
+    "url": "http://www.moosichu.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Moosichu/moosichu.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moosichu/moosichu.com/issues"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "test": "./node_modules/mocha/bin/mocha",
