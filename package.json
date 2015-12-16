@@ -2,7 +2,7 @@
   "name": "moosichu.com",
   "version": "0.0.1",
   "private": true,
-  "engine": "node 4.2.3"
+  "engine": "node 4.2.3",
   "scripts": {
     "start": "node ./bin/www",
     "test": "./node_modules/mocha/bin/mocha",
