@@ -9,6 +9,7 @@ html( lang="en" )
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content="Tom Read-Cutting's personal website")
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
   body(style="padding-bottom:10rem;")
     .container
       //Navbar
@@ -17,15 +18,31 @@ html( lang="en" )
         +nav_item("/about") About
         //+nav_item("/contact", "active") Contact
         +nav_item_dropdown()(label="On the Web")
-          +nav_item("https://twitter.com/TomReadCutting") <img src="images/logos/twitter.svg" alt="" height="10" /> Twitter
-          +nav_item("https://github.com/Moosichu") <img src="images/logos/github.svg" alt="" height="10" />  Github
-          +nav_item("https://www.linkedin.com/in/moosichu") <img src="images/logos/linkedin.svg" alt="" height="10" />  LinkedIn
+          +nav_item("https://twitter.com/TomReadCutting")
+            .social_media
+              include ../public/images/logos/twitter.svg
+              | Twitter
+          +nav_item("https://github.com/Moosichu")
+            .social_media
+              include ../public/images/logos/github.svg
+              | Github
+          +nav_item("https://www.linkedin.com/in/moosichu")
+            .social_media
+              include ../public/images/logos/linkedin.svg
+              | LinkedIn
           //+nav_divider
           //+nav_header Nav header
           //+nav_item("#") Separated link
           //+nav_item("#") One more separated link
       //End Navbar
       block content
+    footer
+      .container
+        p © 2015 Tom Read-Cutting
+        p
+          | Social media logos from 
+          a(href="http://www.entypo.com/") http://www.entypo.com/
+          |  licensed under CC BY-SA 4.0.
     script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
     script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
 
