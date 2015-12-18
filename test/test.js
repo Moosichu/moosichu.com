@@ -1,15 +1,14 @@
 var assert = require('assert');
 var expect = require('chai').expect;
-var request = require('request');
+var request = require('supertest')
+var app = require('../app');
 
-describe("Color Code Converter API", function() {
-  describe("RGB to Hex conversion", function() {
-    var url = "http://localhost:3000/cv.pdf";
-    it("returns status 200", function(done) {
-      request(url, function(error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done();
-      });
-    });
-  });
-});
+describe('GET /cv.pdf', function(){
+  it('respond with pdf', function(done){
+    request(app)
+      .get('/cv.pdf')
+      .set('Accept', 'application/pdf')
+      .expect('Content-Type', 'application/pdf')
+      .expect(200, done);
+  })
+})
