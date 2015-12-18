@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "test": "./node_modules/mocha/bin/mocha",
+    "test": "./node_modules/mocha/bin/mocha --recursive --reporter spec",
     "postinstall": "gulp build"
   },
   "dependencies": {
@@ -41,6 +41,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.4",
+    "mocha-phantomjs": "^4.0.1",
     "request": "^2.67.0",
     "supertest": "^1.1.0"
   }
