@@ -1,6 +1,6 @@
 var app = require('../../app');
 var request = require('supertest');
-var page = "";
+var page = "about";
 
 describe('GET /' + page, function() {
   it('should respond with html.', function(done) {
@@ -16,11 +16,6 @@ describe('GET /' + page, function() {
 
   //TODO: Write these tests using phantomjs
   describe('content', function() {
-    describe('navbar', function() {
-      it('should show moosichu.com link.');
-      it('should show blog link.');
-      it('should show about link.');
-      it('should show social-media links.');
-    });
+    it('should show about description.');
   });
 });
