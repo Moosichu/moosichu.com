@@ -2,7 +2,7 @@
   "name": "moosichu.com",
   "version": "0.0.1",
   "private": false,
-  "license" : "(GPL-3.0)",
+  "license": "(GPL-3.0)",
   "engines": {
     "node": "4.2.3"
   },
@@ -39,6 +39,8 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "request": "^2.67.0"
   }
 }
