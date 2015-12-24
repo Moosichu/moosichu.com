@@ -31,6 +31,8 @@ gulp.task('bootstrap', function() {
   gulp.src('./node_modules/bootstrap/less/bootstrap.less')
     .pipe(less())
     .pipe(gulp.dest('./public/stylesheets'));
+  gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+    .pipe(gulp.dest('./public/scripts'));
 });
 
 // other assets
