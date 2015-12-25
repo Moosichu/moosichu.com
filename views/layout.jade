@@ -17,6 +17,8 @@ html(lang="en")
         +nav_item("/blog") Blog
         +nav_item("/about") About
         //+nav_item("/contact", "active") Contact
+        +nav_item_dropdown("/toybox")(label="Toybox")
+          +nav_item("/toybox/raytracer") Raytracer
         +nav_item_dropdown()(label="On the Web")
           +nav_item("https://twitter.com/TomReadCutting")
             .social_media
@@ -30,8 +32,6 @@ html(lang="en")
             .social_media
               include ../public/images/logos/linkedin.svg
               | LinkedIn
-        +nav_item_dropdown("/toybox")(label="Toybox")
-          +nav_item("/toybox/raytracer") Raytracer
           //+nav_divider
           //+nav_header Nav header
           //+nav_item("#") Separated link
