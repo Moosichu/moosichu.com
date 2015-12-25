@@ -1,7 +1,7 @@
 include mixins/navbar
 
 doctype html
-html( lang="en" )
+html(lang="en")
   head
     title= title
     meta(charset='utf-8' )
@@ -30,6 +30,8 @@ html( lang="en" )
             .social_media
               include ../public/images/logos/linkedin.svg
               | LinkedIn
+        +nav_item_dropdown("/toybox")(label="Toybox")
+          +nav_item("/toybox/raytracer") Raytracer
           //+nav_divider
           //+nav_header Nav header
           //+nav_item("#") Separated link
